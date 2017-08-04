@@ -6,4 +6,5 @@
   <source address="45.79.75.102/32"/>
   <service name="etcd"/>
   <service name="k8s_kubelet"/>
+  <service name="nfs"/>
 </zone>
