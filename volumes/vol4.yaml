@@ -8,7 +8,7 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Recycle
-  storageClassName: nfs
+  storageClassName:
   nfs:
     path: /srv/exports/vol4
     server: bluster-1-001.jkb.io
