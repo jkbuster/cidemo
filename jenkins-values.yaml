@@ -9,7 +9,7 @@ Master:
 
   # Admin credentials
   AdminUser: admin
-  AdminPassword: jkbuster
+  #AdminPassword: jkbuster
 
   # Host name for Ingress
   HostName: jenkins.jkb.io
