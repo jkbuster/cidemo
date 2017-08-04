@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>k8s_master</short>
+  <description>For connections from master nodes in a k8s cluster.</description>
+  <source address="45.79.103.83/32"/>
+  <service name="etcd"/>
+  <service name="k8s_master_api"/>
+  <service name="k8s_kubelet"/>
+</zone>

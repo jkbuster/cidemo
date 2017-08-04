@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>k8s_master_api</short>
+  <description>Kubernetes master API.</description>
+  <port protocol="tcp" port="6443"/>
+</service>
