@@ -1,3 +1,8 @@
+# Value overrides for kubernetes-dashboard Helm chart
+#
+# To install: helm install -n dashboard -f kubernetes-dashboard-values.yaml stable/kubernetes-dashboard
+#
+
 ingress:
   enabled: true
   hosts:
