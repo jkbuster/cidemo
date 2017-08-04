@@ -1,0 +1,9 @@
+# Value overrides for nginx-ingress Helm chart
+#
+# To install: helm install -n nginx-ingress -f nginx-ingress-values.yaml stable/nginx-ingress
+#
+
+controller:
+  hostNetwork: true
+  kind: DaemonSet
+  nodeSelector: {node-role.kubernetes.io/ingress}
