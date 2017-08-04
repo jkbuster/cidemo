@@ -1,0 +1,23 @@
+# Value overrides for Jenkins Helm chart
+#
+# To install: helm install -n jenkins -f jenkins-values.yaml stable/jenkins
+#
+
+Master:
+  Image: "jenkins/jenkins"
+  ImageTag: "2.72-alpine"
+
+  # Admin credentials
+  AdminUser: admin
+  AdminPassword: jkbuster
+
+  # Host name for Ingress
+  HostName: jenkins.jkb.io
+
+  # List of plugins to be install during Jenkins master start
+  InstallPlugins:
+      - kubernetes:0.12
+      - workflow-aggregator:2.5
+      - workflow-job:2.14.1
+      - credentials-binding:1.12
+      - git:3.5.0
