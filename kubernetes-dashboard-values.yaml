@@ -1,0 +1,5 @@
+ingress:
+  enabled: true
+  hosts:
+    - kubernetes-dashboard.jkb.io
+    - k8s-db.jkb.io
