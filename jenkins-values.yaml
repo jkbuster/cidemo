@@ -1,6 +1,7 @@
 # Value overrides for Jenkins Helm chart
 #
 # To install: helm install -n jenkins -f jenkins-values.yaml stable/jenkins
+# Retrieve jenkins admin password: printf $(kubectl get secret --namespace default jenkins-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
 #
 
 Master:
@@ -9,7 +10,6 @@ Master:
 
   # Admin credentials
   AdminUser: admin
-  #AdminPassword: jkbuster
 
   # Host name for Ingress
   HostName: jenkins.jkb.io
