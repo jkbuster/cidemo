@@ -2,8 +2,6 @@
 <service>
   <short>k8s_ingress</short>
   <description>Kubernetes ingress nodes setup.</description>
-  <port protocol="tcp" port="32080"/>
-  <port protocol="tcp" port="32443"/>
   <port protocol="tcp" port="80"/>
   <port protocol="tcp" port="443"/>
 </service>
